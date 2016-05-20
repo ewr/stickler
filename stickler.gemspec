@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new("~> 2.2") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Jeremy Hinegardner"]
-  s.date = "2015-10-13"
+  s.date = "2016-05-20"
   s.description = "Stickler is a tool to organize and maintain an internal gem repository. Primarily, you would want to use Stickler if: 1. You have proprietary gems that you want to have available via a gem server so     you may `gem install` them. 2. You would like to have a local mirror of third party gems from either     http://rubygems.org or some other gem server. 3. You want both (1) and (2) in the same server."
   s.email = "jeremy@copiousfreetime.org"
   s.executables = ["stickler", "stickler-passenger-config", "stickler-server"]
@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.rdoc_options = ["--main", "README.md", "--markup", "tomdoc"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.3")
-  s.rubygems_version = "2.4.8"
+  s.rubygems_version = "2.5.1"
   s.summary = "Stickler is a tool to organize and maintain an internal gem repository. Primarily, you would want to use Stickler if:"
 
   if s.respond_to? :specification_version then
@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<addressable>, ["~> 2.3"])
       s.add_runtime_dependency(%q<excon>, ["~> 0.37"])
       s.add_runtime_dependency(%q<trollop>, ["~> 2.1"])
-      s.add_runtime_dependency(%q<logging>, ["~> 1.8"])
+      s.add_runtime_dependency(%q<logging>, [">= 1.8"])
       s.add_development_dependency(%q<rake>, ["~> 10.4"])
       s.add_development_dependency(%q<rack-test>, ["~> 0.6"])
       s.add_development_dependency(%q<builder>, ["~> 3.2"])
@@ -45,7 +45,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<addressable>, ["~> 2.3"])
       s.add_dependency(%q<excon>, ["~> 0.37"])
       s.add_dependency(%q<trollop>, ["~> 2.1"])
-      s.add_dependency(%q<logging>, ["~> 1.8"])
+      s.add_dependency(%q<logging>, [">= 1.8"])
       s.add_dependency(%q<rake>, ["~> 10.4"])
       s.add_dependency(%q<rack-test>, ["~> 0.6"])
       s.add_dependency(%q<builder>, ["~> 3.2"])
@@ -60,7 +60,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<addressable>, ["~> 2.3"])
     s.add_dependency(%q<excon>, ["~> 0.37"])
     s.add_dependency(%q<trollop>, ["~> 2.1"])
-    s.add_dependency(%q<logging>, ["~> 1.8"])
+    s.add_dependency(%q<logging>, [">= 1.8"])
     s.add_dependency(%q<rake>, ["~> 10.4"])
     s.add_dependency(%q<rack-test>, ["~> 0.6"])
     s.add_dependency(%q<builder>, ["~> 3.2"])
